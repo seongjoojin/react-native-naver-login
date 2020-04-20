@@ -77,7 +77,7 @@ RCT_EXPORT_METHOD(login:(NSDictionary *)key callback:(RCTResponseSenderBlock)cal
     [naverConn setAppName:[key objectForKey:@"kServiceAppName"]];
     [naverConn setServiceUrlScheme:[key objectForKey:@"kServiceAppUrlScheme"]];
 
-    [naverConn setIsNaverAppOauthEnable:YES]; // 네이버 앱 사용 안할 때는 NO
+    [naverConn setIsNaverAppOauthEnable:NO]; // 네이버 앱 사용 안할 때는 NO
     [naverConn setIsInAppOauthEnable:YES]; // 내장 웹뷰 사용 안할 때는 NO
 
     [naverConn setOnlyPortraitSupportInIphone:YES]; // 포트레이트 레이아웃만 사용하는 경우.
